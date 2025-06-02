@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outdoor</title>
+    <style>
+        *{
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+
+        body{
+            font-family: "굴림";
+            padding: 10px;
+            background-color: #ffffff;
+        }
+
+        .header{
+            padding:10px;
+            background-color: #dbe9f4;
+            text-align: center;
+        }
+        .header img{
+            float: left;
+            width:50px;
+        }
+        .topnav{
+            overflow: hidden;
+        }
+
+        .topnav a{
+            float:right;
+            display:block;
+            color:#000000;
+            text-align:center;
+            font-size: 12px;
+            padding:10px 14px;
+            text-decoration: none;
+        }
+        .blue{
+            background-color:#c8d9e6;
+            font-weight: bold;
+        }
+
+        .topnav a:hover{
+            background-color: #4289a1;
+            color:rgb(255, 255, 255);
+        }
+
+        footer {
+            background-color: #dbe9f4;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #border {
+            border-bottom: solid 3px #9097c8;
+            margin: 50px auto;
+            padding: 10px 20px;
+            width: 1000px;
+        }
+
+        .play {
+            width: 900px;
+            margin: 30px auto;
+            padding: 40px;
+            background-color:  #f2f0f0;
+
+            display:flex;
+            justify-content: center;
+            align-items: center;
+
+            border: 2px solid #9097c8;
+            border-radius:10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .play_image {
+            width: 400px;
+            height: 500px;
+            margin-right: 30px;
+        }
+
+        .play_info {
+            width: 440px;
+            height: 500px;
+            padding-top:50px;
+            text-align: left;
+
+        }
+
+        .play_name {
+            color: #606cc5;
+            font-size: 40px;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .play_rule {
+            font-size: 20px;
+            color: #000000;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+
+        @media screen and (max-width: 800px) {
+            .play {
+                display: block;
+                width: 90%;
+                margin: 20px auto;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .play_image {
+                display: block;
+                width: 80%;
+                height: auto;
+                margin: 0 auto 20px auto;
+            }
+
+            .play_info {
+                width: 90%;
+                height: auto;
+                padding: 0;
+                text-align: center;
+                margin: 0 auto;
+            }
+
+            .play_rule img {
+                width: 80% !important;
+                height: auto;
+                margin: 10px auto;
+            }
+
+            .play_etc {
+                width: 95%;
+                padding: 20px;
+            }
+
+            .play_etc img {
+                width: 60%;
+                height: auto;
+            }
+
+            .play_etc h2 {
+                font-size: 28px;
+            }
+
+            .play_name {
+                font-size: 30px;
+            }
+
+            .play_rule {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+                text-align: left;
+            }
+
+            .header img {
+                float: none;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><img src="logo_blue.jpg"></a>
+        <div class="topnav">
+            <a href="mainmenu5.html">그 시절 아이템</a>
+            <a href="mainmenu4.html" class="blue">그 시절 놀이</a>
+            <a href="mainmenu3.html">그 시절 활동</a>
+            <a href="mainmenu2.html">그 시절 음악&방송</a>
+            <a href="mainmenu1.html">그 시절 휴대폰</a>
+        </div>
+    </div>
+
+    <h2 id="border">실외 한 놀이</h2>
+
+    <div class="play">
+        <img src="out1.jpeg" class="play_image">
+
+        <div class="play_info">
+            <h2 class="play_name">방방이</h2>
+            <p class="play_rule">특징:<br>지금처럼 잘 정돈된 장소에서의 트램펄린이 아니라, 막으로 둘러쌓인 장소.<br>방방이 타다가 옆에서 불량식품 사먹곤 함. <br>틈으로 다리가 빠져 부상당하는 아이들이 많음.<br>그럼에도 계속 놀러 갔음. </p>
+        </div>
+    </div>
+
+
+    <div class="play">
+        <img src="out2.png" class="play_image">
+
+        <div class="play_info">
+            <h2 class="play_name">경찰과 도둑</h2>
+            <p class="play_rule">규칙:<br>경찰이 도둑을 잡고, 도둑은 경찰을 피해 도망가는 놀이. <br>보통 "경도"라 말함. <br>반드시 경찰보다 도둑이 많아야 함.</p>
+        </div>
+    </div>
+
+    <div class="play">
+        <img src="out3.jpeg" class="play_image">
+
+        <div class="play_info">
+            <h2 class="play_name">미키마우스</h2>
+            <p class="play_rule">규칙:<br>술래를 제외한 사람들은 기둥을 반드시 붙잡고 있어야 함. <br> 술래가 "미키마우스"라고 구호 부르는 거에 맞춰 다른 기둥으로 이동해야 함. <br>이동하다 잡히면 그 사람이 술래.</p>
+        </div>
+    </div>
+
+    <div class="play">
+        <img src="out4.jpeg" class="play_image">
+
+        <div class="play_info">
+            <h2 class="play_name">색두더지</h2>
+            <p class="play_rule">규칙:<br>술래는 색을 정해서, 그 색의 블럭과 놀이기구만 밟거나 만질 수 있음. <br>정해진 색으로만 이동해서 사람을 잡으면 잡힌 사람이 술래가 됨</p>
+        </div>
+    </div>
+
+    <div class="play">
+        <img src="out5.jpeg" class="play_image">
+
+        <div class="play_info">
+            <h2 class="play_name">지옥 탈출</h2>
+            <p class="play_rule">규칙:<br>놀이기구의 구조물 위에서 행해지는 술래잡기이다. <br>보통 술래가 눈을 감고 놀이터에서 사람을 잡으면 된다. <br>술래가 눈을 감고 있다는 점을 이용해 술래가 아닌 사람들은 미끄럼틀 위나, 놀이기구의 높은 부분으로 올라가곤 했다.</p>
+        </div>
+    </div>
+
+
+    <footer>
+        © COPYRIGHT(C) 어게인 All Rights Reseved/
+    </footer>    
+</body>
+</html>

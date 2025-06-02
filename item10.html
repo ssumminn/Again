@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food1</title>
+    <style>
+        *{
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+
+        body{
+            font-family: "굴림";
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+
+        .header{
+            padding:10px;
+            background-color: #dbe9f4;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header img{
+            float: left;
+            width:50px;
+        }
+        .topnav{
+            overflow: hidden;
+        }
+
+        .topnav a{
+            float:right;
+            display:block;
+            color:#000000;
+            text-align:center;
+            font-size: 12px;
+            padding:10px 14px;
+            text-decoration: none;
+        }
+        .blue{
+            background-color:#c8d9e6;
+            font-weight: bold;
+        }
+
+        .topnav a:hover{
+            background-color: #4289a1;
+            color:rgb(255, 255, 255);
+        }
+
+        footer {
+            background-color: #dbe9f4;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+
+            clear:both;
+        }
+
+
+
+
+
+        li{
+            list-style-type:none;
+        }
+        .clear{
+            clear:both;
+        }
+
+        .content_wrapper{
+            margin:30px auto;
+            width:1000px;
+            overflow:hidden;
+        }
+
+        #left{
+            width:20%;
+            height:600px;
+            float:left;
+            background-color:#83a4c2;
+            color:#dddffe;
+            font-weight: bold;
+            margin-bottom: 50px;
+        }
+        #left h2{
+            font-weight:normal;
+            padding:20px 0 0 30px;
+        }
+        #left ul{
+            font-size:14px;
+            padding:10px 10px 5px 25px;
+        }
+        #left li{
+            padding:3px;
+        }
+        #right{
+            width:80%;
+            height:600px;
+            float:left;
+            background-color:#4b769e;
+            margin-bottom: 50px;
+        }
+        #main_title{
+            width:572px;
+            padding:10px;
+            border:solid 5px #8da9e5;
+            margin:24px 0 0 24px;
+            font-size:18px;
+            color:#ffffff;
+            font-weight:bold;
+        }
+        #main_img{
+            padding:15px 0 0 24px;
+            width:600px;
+            height:377px;
+        }
+        #thumnail{
+            padding:30px 0 0 70px;
+        }
+        #thumnail #move_left{
+            float:left;
+            margin:20px 5px 0 40px;
+            width:21px;
+            height:30px;
+        }
+        #thumnail #photos{
+            float:left;
+            margin:3px 0 0 0;
+        }
+        #thumnail #move_right{
+            float:left;
+            margin:20px 0 0 20px;
+            width:21px;
+            height:30px;
+        }
+        #thumnail #photos li{
+            display:inline;
+            margin-left:10px;
+        }
+        #thumnail #photos img{
+            border:solid 5px #3d3d3d;
+            width:50px;
+            height:50px;
+        }
+        .submenu a:link{
+        color:#e8f6ff;
+        text-decoration:none;
+        font-weight: bold;
+        }
+        .submenu a:active{
+            color:#59a4ff;
+        }
+
+
+        @media screen and (max-width: 800px) {
+            #left,
+            #right {
+                float: none;
+                width: 100%;
+                height: auto;
+                margin: 0 auto 20px auto;
+            }
+
+            #left ul {
+                font-size: 13px;
+                padding-left: 20px;
+            }
+
+            #right {
+                padding: 10px;
+            }
+
+            #main_title {
+                width: auto;
+                margin: 0 auto 20px auto;
+                text-align: center;
+                font-size: 16px;
+            }
+
+            #main_img {
+                display: block;
+                width: 90%;
+                height: auto;
+                margin: 0 auto 20px auto;
+            }
+
+            #thumnail {
+                padding: 10px 0;
+                text-align: center;
+            }
+
+            #thumnail #move_left,
+            #thumnail #move_right {
+                display: inline-block;
+                float: none;
+                width: 20px;
+                height: auto;
+                margin: 10px;
+            }
+
+            #thumnail #photos {
+                float: none;
+                margin: 0 auto;
+            }
+
+            #thumnail #photos li {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            #thumnail #photos img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+                text-align: left;
+            }
+
+            .header img {
+                float: none;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><img src="logo_blue.jpg"></a>
+        <div class="topnav">
+            <a href="mainmenu5.html" class="blue">그 시절 아이템</a>
+            <a href="mainmenu4.html">그 시절 놀이</a>
+            <a href="mainmenu3.html">그 시절 활동</a>
+            <a href="mainmenu2.html">그 시절 음악&방송</a>
+            <a href="mainmenu1.html">그 시절 휴대폰</a>
+        </div>
+    </div>
+
+
+
+
+    <div id="left">
+        <h2>그 시절 아이템</h2>
+        <ul>
+            <li class="submenu"><a href="mainmenu5.html">+ 화장품</a></li>
+            <li class="submenu"><a href="food1.html">+ 불량식품</a></li>
+            <li class="submenu"><a href="item1.html">+ 물품</a></li>
+        </ul>
+    </div>
+    <div id="right">
+        <div id="main_title">물품</div>
+        <img id="main_img" src="item10.jpeg">
+            <div id="thumnail">
+            <a href="item5.html"><img id="move_left" src="bt_move_left.png"></a>
+            <ul id="photos">
+                <li><a href="item6.html"><img src="item6.jpeg"></a></li>
+                <li><a href="item7.html"><img src="item7.jpeg"></a></li>
+                <li><a href="item8.html"><img src="item8.jpeg"></a></li>
+                <li><a href="item9.html"><img src="item9.png"></a></li>
+                <li><a href="item10.html"><img src="item10.jpeg"></a></li>
+            </ul>
+            <img id="move_right" src="bt_move_right.png">
+        </div>
+    </div>
+
+    <footer>© COPYRIGHT(C) 어게인 All Rights Reseved/</footer>
+</body>
+</html>

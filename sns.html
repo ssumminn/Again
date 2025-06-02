@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>sns</title>
+  <style>
+    *{
+        box-sizing:border-box;
+        margin:0;
+        padding:0;
+    }
+
+    body{
+        font-family: "굴림";
+        padding: 10px;
+        background-color: #f1f1f1;
+    }
+
+    .header{
+        padding:10px;
+        background-color: #dbe9f4;
+        text-align: center;
+    }
+    .header img{
+        float: left;
+        width:50px;
+    }
+    .topnav{
+        overflow: hidden;
+    }
+
+    .topnav a{
+        float:right;
+        display:block;
+        color:#000000;
+        text-align:center;
+        font-size: 12px;
+        padding:10px 14px;
+        text-decoration: none;
+    }
+    .blue{
+        background-color:#c8d9e6;
+        font-weight: bold;
+    }
+
+    .topnav a:hover{
+        background-color: #4289a1;
+        color:rgb(255, 255, 255);
+    }
+
+
+
+    .tabmenu{
+        width:390px;
+        height:30px;
+        margin:50px 5px 0 5px;
+        background-color: #e3eff7;
+        border:1px solid #003366;
+        overflow:hidden;
+    }
+    .tab1, .tab2, .tab3{
+        float: left;
+        width: 120px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 12px;
+        text-decoration: none;
+        color: black;
+    }
+    .tab1{
+        border-right:1px solid #003366;
+    }
+    .tab2{
+        border-right:1px solid #003366;
+    }
+    .tab3{
+        border-right:none;
+    }
+    .selected{
+        background-color: #9abff0;
+    }
+
+
+
+    .mainbox{
+        background-color: #166681;
+        width:800px;
+        padding:10px;
+        margin:0 5px;
+    }
+    .imgbox{
+        width:100%;
+        overflow: hidden;
+    }
+    .img{
+        float:left;
+        width:220px;
+        height:200px;
+        margin:20px;
+        background-color: #dbe9f4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+    .img img{
+        width:200px;
+        height:150px;
+    }
+
+
+
+
+
+
+
+    footer {
+        background-color: #dbe9f4;
+        padding: 20px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    @media screen and (max-width: 800px) {
+        .mainbox {
+            width: 100%;
+            padding: 0;
+        }
+
+        .img {
+            float: none;
+            width: 80%;
+            margin: 10px auto;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .topnav a {
+            float: none;
+            width: 100%;
+            text-align: left;
+        }
+
+        .tabmenu {
+            width: 100%;
+        }
+
+        .tab1, .tab2, .tab3 {
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
+    }
+    
+  </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><img src="logo_blue.jpg"></a>
+        <div class="topnav">
+            <a href="mainmenu5.html">그 시절 아이템</a>
+            <a href="mainmenu4.html">그 시절 놀이</a>
+            <a href="mainmenu3.html">그 시절 활동</a>
+            <a href="mainmenu2.html">그 시절 음악&방송</a>
+            <a href="mainmenu1.html" class="blue">그 시절 휴대폰</a>
+        </div>
+    </div>
+
+
+
+    <div class="tabmenu">
+        <a href="mainmenu1.html" class="tab1">휴대폰</a>
+        <a href="sns.html" class="tab2 selected">SNS</a>
+        <a href="game.html" class="tab3">게임</a>
+    </div>
+
+
+
+     
+    <div class="mainbox">
+        <div class="imgbox">
+            <div class="img"><img src="sns1.png"></div>
+            <div class="img"><img src="sns2.jpeg"></div>
+            <div class="img"><img src="sns3.png"></div>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        © COPYRIGHT(C) 어게인 All Rights Reseved/
+    </footer>
+</body>
+</html>

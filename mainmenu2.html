@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>main2</title>
+  <style>
+    *{
+        box-sizing:border-box;
+        margin:0;
+        padding:0;
+    }
+
+    body{
+        font-family: "굴림";
+        padding: 10px;
+        background-color: #f1f1f1;
+    }
+
+    .header{
+        padding:10px;
+        background-color: #dbe9f4;
+        text-align: center;
+    }
+    .header img{
+        float: left;
+        width:50px;
+    }
+    .topnav{
+        overflow: hidden;
+    }
+
+    .topnav a{
+        float:right;
+        display:block;
+        color:#000000;
+        text-align:center;
+        font-size: 12px;
+        padding:10px 14px;
+        text-decoration: none;
+    }
+    .blue{
+        background-color:#c8d9e6;
+        font-weight: bold;
+    }
+
+    .topnav a:hover{
+        background-color: #4289a1;
+        color:rgb(255, 255, 255);
+    }
+
+    footer {
+        background-color: #dbe9f4;
+        padding: 20px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+
+
+
+    section{
+        display: flex;
+        margin:20px auto;
+    }
+    aside.left, aside.right{
+        background-color: #79a6d2;
+        padding:10px;
+        width:35%;
+        color:white;
+    }
+    aside.left h3, aside.right h3{
+        margin-bottom: 10px;
+        font-size:14px;
+        text-align: center;
+    }
+    .idol, .tvshow_list{
+        background-color: #002b5c;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        margin:10px 0;
+        padding:5px;
+        font-size:12px;
+    }
+    .idol img, .tvshow_list img {
+        display: block;
+        margin: 5px auto;
+        width: 80%;
+        height: auto;
+    }
+    .center {
+        background-color: #cfe2f3;
+        padding: 5px 10px;
+        width: 30%;
+        text-align: center;
+    }
+    .music_list {
+        background-color: #002b5c;
+        color: white;
+        padding: 5px 0;
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: "맑은 고딕";
+    }
+    .music_list img{
+        width: 80%;
+    }
+
+
+
+      /* ✅ 여기에 미디어 쿼리 추가 */
+    @media screen and (max-width: 800px) {
+        section {
+        flex-direction: column;
+        }
+
+        aside.left,
+        aside.right,
+        .center {
+        width: 100%;
+        margin: 10px 0;
+        }
+
+        .idol img, .tvshow_list img, .music_list img {
+        width: 60%;  /* 너무 크지 않게 조절 */
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .topnav a {
+        float: none;
+        width: 100%;
+        text-align: left;
+        }
+    }
+
+
+
+
+  </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><img src="logo_blue.jpg"></a>
+        <div class="topnav">
+            <a href="mainmenu5.html">그 시절 아이템</a>
+            <a href="mainmenu4.html">그 시절 놀이</a>
+            <a href="mainmenu3.html">그 시절 활동</a>
+            <a href="mainmenu2.html" class="blue">그 시절 음악&방송</a>
+            <a href="mainmenu1.html">그 시절 휴대폰</a>
+        </div>
+    </div>
+
+
+
+    <section>
+        <aside class="left">
+        <h3>너도 알고, 나도 아는</h3>
+
+            <div class="idol">EXO<a href="exo.html"><img src="idol1.jpeg"></a></div>
+
+            <div class="idol">B.A.P<a href="bap.html"><img src="idol2.jpeg"></a></div>
+
+            <div class="idol">Apink<a href="apink.html"><img src="idol3.jpeg"></a></div>
+
+            <div class="idol">워너원<a href="wannaone.html"><img src="idol4.jpeg"></a></div>
+
+            <div class="idol">방탄소년단<a href="bts.html"><img src="idol5.jpeg"></a></div>
+
+            <div class="idol">인피니트<a href="infinite.html"><img src="idol6.jpeg"></a></div>
+
+            <div class="idol">블락비<a href="blockb.html"><img src="idol7.jpeg"></a></div>
+            
+            <div class="idol">I.O.I<a href="ioi.html"><img src="idol8.jpeg"></a></div>
+
+        </aside>
+
+        <div class="center">
+            <h3>이 노래 너도 알 걸</h3>
+            <div class="music_list">2009년<br><img src="song1.png"></div>
+            <div class="music_list">2010년<br><img src="song2.png"></div>
+            <div class="music_list">2011년<br><img src="song3.png"></div>
+            <div class="music_list">2012년<br><img src="song4.png"></div>
+            <div class="music_list">2014년<br><img src="song5.png"></div>
+            <div class="music_list">2015년<br><img src="song6.png"></div>
+        </div>
+
+        <aside class="right">
+        <h3>너도 봤을 걸</h3>
+        <div class="tvshow_list">강철수염과 게으른 동네<a href="lazytown.html"><img src="tv1.jpeg"></a></div>
+        <div class="tvshow_list">뽀로로<a href="pororo.html"><img src="tv2.jpeg"></a></div>
+        <div class="tvshow_list">번개맨<a href="lightning.html"><img src="tv3.jpeg"></a></div>
+        <div class="tvshow_list">웃.찾.사<a href="hahaha.html"><img src="tv4.jpeg"></a></div><div class="tvshow_list">깨미<a href="kemy.html"><img src="tv6.jpeg"></a></div>
+        <div class="tvshow_list">파워레인저<a href="powerrangers.html"><img src="tv7.jpeg"></a></div>
+        <div class="tvshow_list">무한도전<a href="muhan.html"><img src="tv9.jpeg"></a></div>
+        </aside>
+
+
+
+    </section>
+
+
+
+    <footer>
+        © COPYRIGHT(C) 어게인 All Rights Reseved/
+    </footer>
+</body>
+</html>

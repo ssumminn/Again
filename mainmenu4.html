@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main4</title>
+    <style>
+        *{
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+
+        body{
+            font-family: "굴림";
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+
+        .header{
+            padding:10px;
+            background-color: #dbe9f4;
+            text-align: center;
+        }
+        .header img{
+            float: left;
+            width:50px;
+        }
+        .topnav{
+            overflow: hidden;
+        }
+
+        .topnav a{
+            float:right;
+            display:block;
+            color:#000000;
+            text-align:center;
+            font-size: 12px;
+            padding:10px 14px;
+            text-decoration: none;
+        }
+        .blue{
+            background-color:#c8d9e6;
+            font-weight: bold;
+        }
+
+        .topnav a:hover{
+            background-color: #4289a1;
+            color:rgb(255, 255, 255);
+        }
+
+        footer {
+            background-color: #dbe9f4;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+
+
+
+        #playground{
+            margin:50px auto;
+            width: 600px;
+        }
+        #playground img{
+            display:block;
+            width:100%;
+            margin-bottom: 30px;
+            height: 200px;
+            border: 5px solid #4689cc;
+            border-radius:8px;
+        }
+
+
+        @media screen and (max-width: 800px) {
+            #playground {
+                width: 90%;
+                margin: 30px auto;
+            }
+
+            #playground img {
+                height: auto;
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+                text-align: left;
+            }
+
+            .header img {
+                float: none;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><img src="logo_blue.jpg"></a>
+        <div class="topnav">
+            <a href="mainmenu5.html">그 시절 아이템</a>
+            <a href="mainmenu4.html" class="blue">그 시절 놀이</a>
+            <a href="mainmenu3.html">그 시절 활동</a>
+            <a href="mainmenu2.html">그 시절 음악&방송</a>
+            <a href="mainmenu1.html">그 시절 휴대폰</a>
+        </div>
+    </div>
+
+
+    <section id="playground">
+        <a href="indoor.html"><img src="playground2.png"></a>
+        <a href="outdoor.html"><img src="playground1.jpeg"></a>
+    </section> 
+
+
+    <footer>
+        © COPYRIGHT(C) 어게인 All Rights Reseved/
+    </footer> 
+    
+</body>
+</html>

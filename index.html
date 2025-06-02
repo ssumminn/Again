@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스마트폰 속 그때 우리</title>
+    <style>
+        *{
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+
+        body{
+            font-family: "굴림";
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+        .header{
+            padding:10px;
+            background-color: white;
+            text-align: center;
+        }
+        .header img{
+            width:100px;
+        }
+
+        .topnav{
+            overflow: hidden;
+            background-color: #dbe9f4;
+        }
+
+        .topnav a{
+            float:left;
+            display:block;
+            color:#000000;
+            text-align:center;
+            font-size: 12px;
+            padding:10px 14px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover{
+            background-color: #4289a1;
+            color:rgb(255, 255, 255);
+        }
+
+        .sections a:hover{
+            background-color: #dbe9f4;
+            color:black;
+        }
+
+        .leftcolumn{
+            float:left;
+            width:25%;
+        }
+
+        .leftcolumn img{
+            width:100%;
+        }
+
+        .rightcolumn{
+            float:left;
+            width:75%;
+            background-color: #f1f1f1;
+            padding-left:20px;
+        }
+
+         .sections {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .section {
+            background-color: #466b82;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            width: 17%;
+            padding: 5px 1px;
+            text-align: center;
+            border-radius: 8px;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+        .section img{
+            width: 100%;
+            padding: 5px 0 0 0;
+        }
+
+
+        .card{
+            background-color: white;
+            padding:20px;
+            margin-top:20px;
+        }
+        .card p{
+            font-family:"맑은 고딕";
+            font-size: 24px;
+            font-weight: bold;
+            text-align:center;
+        }
+        .card h2{
+            font-family:"맑은 고딕";
+            font-size: 30px;
+            font-weight: bold;
+            color:#5b8a9c;
+            text-align:center;
+        }
+
+
+        .row:after{
+            content: "";
+            display:table;
+            clear:both;
+        }
+
+        
+        footer {
+            background-color: #dbe9f4;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        @media screen and (max-width: 800px){
+            .leftcolumn, .rightcolumn{
+                width:100%;
+                padding:0;
+            }
+        }
+
+
+        @media screen and (max-width: 400px){
+            .topnav a{
+                float:none;
+                width:100%;
+            }
+        }
+
+  </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo_again.jpg">
+    </div>
+    
+    <div class="topnav">
+        <a href="mainmenu1.html">그 시절 휴대폰</a>
+        <a href="mainmenu2.html">그 시절 음악&방송</a>
+        <a href="mainmenu3.html">그 시절 활동</a>
+        <a href="mainmenu4.html">그 시절 놀이</a>
+        <a href="mainmenu5.html">그 시절 아이템</a>
+        <a href="index.html" style="float:right">전체보기</a>
+    </div>
+
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>TITLE img</h2>
+                <img src="smart.png">
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>기획</h2>
+                <p>디지털 속 기억을 더듬어.. <br>스마트폰 속 그 때 우리, 다시 그 시절로</p>
+            </div>
+            <div class="card">
+                <h2>사이트 바로가기</h2>
+                <div class="sections">
+                    <a href="mainmenu1.html" class="section">그 시절<br>휴대폰<br><img src="phone.png"></a>
+                    <a href="mainmenu2.html" class="section">그 시절<br>음악&방송<br><img src="musictv.png"></a>
+                    <a href="mainmenu3.html" class="section">그 시절<br>활동<br><img src="hwal.png"></a>
+                    <a href="mainmenu4.html" class="section">그 시절<br>놀이<br><img src="play.png"><img src="playground.png"></a>
+                    <a href="mainmenu5.html" class="section">그 시절<br>아이템<br><img src="item.png"></a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+  <footer>
+    © COPYRIGHT(C) 어게인 All Rights Reseved/
+  </footer>
+</body>
+</html>

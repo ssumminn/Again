@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pororo</title>
+    <style>
+        *{
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+
+        body{
+            font-family: "굴림";
+            padding: 10px;
+            background-color: #ffffff;
+        }
+
+        .header{
+            padding:10px;
+            background-color: #dbe9f4;
+            text-align: center;
+        }
+        .header img{
+            float: left;
+            width:50px;
+        }
+        .topnav{
+            overflow: hidden;
+        }
+
+        .topnav a{
+            float:right;
+            display:block;
+            color:#000000;
+            text-align:center;
+            font-size: 12px;
+            padding:10px 14px;
+            text-decoration: none;
+        }
+        .blue{
+            background-color:#c8d9e6;
+            font-weight: bold;
+        }
+
+        .topnav a:hover{
+            background-color: #4289a1;
+            color:rgb(255, 255, 255);
+        }
+
+    
+    
+    
+        #border {
+            border-bottom: solid 3px #9097c8;
+            margin: 50px auto;
+            padding: 10px 20px;
+            width: 1000px;
+           
+        }
+
+        #tv {
+            width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color:  #f2f0f0;
+
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tv_image {
+            width: 400px;
+            height: 500px;
+            margin-right: 30px;
+        }
+
+        .tv_info {
+            width: 440px;
+            height: auto;
+            padding-top:30px;
+            text-align: left;
+
+        }
+
+        .tv_name {
+            color: #606cc5;
+            font-size: 40px;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .tv_member {
+            font-size: 30px;
+            color: #3e5399;
+            margin-bottom: 20px;
+        }
+        .tv_member img{
+            width:80px;
+            height:auto;
+            margin-right:5px;
+        }
+
+        .tv_episode{
+            font-size: 25px;
+            color:#4289a1;
+            font-weight: bold;
+            margin-bottom: 20px;
+            margin-top:30px;
+        }
+
+
+
+        footer {
+            background-color: #dbe9f4;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        } 
+
+
+        @media screen and (max-width: 800px) {
+            #tv {
+                display: block;
+                padding: 20px;
+            }
+
+            .tv_image {
+                display: block;
+                width: 80%;
+                height: auto;
+                margin: 0 auto 20px auto;
+            }
+
+            .tv_info {
+                display: block;
+                width: 90%;
+                margin: 0 auto;
+                padding-top: 10px;
+                text-align: center;
+            }
+
+            .tv_name {
+                font-size: 30px;
+            }
+
+            .tv_member {
+                font-size: 20px;
+            }
+
+            .tv_episode {
+                font-size: 18px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+                text-align: left;
+            }
+
+            .header img {
+                float: none;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><img src="logo_blue.jpg"></a>
+        <div class="topnav">
+            <a href="mainmenu5.html">그 시절 아이템</a>
+            <a href="mainmenu4.html">그 시절 놀이</a>
+            <a href="mainmenu3.html">그 시절 활동</a>
+            <a href="mainmenu2.html" class="blue">그 시절 음악&방송</a>
+            <a href="mainmenu1.html">그 시절 휴대폰</a>
+        </div>
+    </div>
+
+
+
+    <h1 id="border">뽀로로</h1>
+
+    <div id="tv">
+        <img src="tv2.jpeg" class="tv_image">
+
+        <div class="tv_info">
+            <h2 class="tv_name">뽀롱뽀롱 뽀로로</h2>
+            <p class="tv_member"><b>등장인물:</b> <br><img src="pororo1.webp">뽀로로<br><img src="pororo2.webp">크롱<br> <img src="pororo3.webp">에디<br><img src="pororo4.webp">로디 <br><img src="porprp5.webp">루피<br><img src="pororo6.webp">패티<br><img src="pororo7.webp">포비<br><img src="pororo8.webp">해리</p>
+            <p class="tv_episode">대표 에피소드: <br> S3 EP01. 뽀뽀와 삐삐<br>
+            S3 EP03. 로디의 탄생<br>
+            S3 EP06. 마법의 사과</p>
+        </div>
+    </div>
+   
+
+
+    <footer>
+        © COPYRIGHT(C) 어게인 All Rights Reseved/
+    </footer>
+
+</body>
+</html>
